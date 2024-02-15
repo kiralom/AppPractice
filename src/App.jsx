@@ -13,6 +13,15 @@ function App() {
 
   return (
     <div className="App">
+      {featPupId && (
+        <div id="featPup">
+          <h2>{featuredPup.name}</h2>
+          <ul>
+            <li>Age: {featuredPup.age}</li>
+            <li>Email: {featuredPup.email}</li>
+          </ul>
+        </div>
+      )}
       {puppies.map((puppy) => {
         return (
           <p
@@ -24,15 +33,6 @@ function App() {
           </p>
         );
       })}
-      {featPupId && (
-        <div>
-          <h2>{featuredPup.name}</h2>
-          <ul>
-            <li>Age: {featuredPup.age}</li>
-            <li>Email: {featuredPup.email}</li>
-          </ul>
-        </div>
-      )}
     </div>
   );
 }

@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+.App {
+  display: grid;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: black;
+}
+
+li {
+  color: dodgerblue;
+}
+
+#featPup {
+  border: 5pt groove navy;
+  padding: 15px;
+  background-color: lightcyan;
+}
+
+p {
+  border: 2pt solid cornflowerblue;
+  background-color: darkblue;
+  padding: 8px;
+  min-width: 350px;
+}
